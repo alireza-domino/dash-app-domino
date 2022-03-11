@@ -17,23 +17,11 @@ project = os.environ.get("DOMINO_PROJECT_NAME")
 runid = os.environ.get("DOMINO_RUN_ID")
 runurl = '/' + user + '/' + project + '/r/notebookSession/'+ runid + '/'
 
-################################################################
-# Configure path for dependencies. This is required for Domino. 
-# There are two options for routing path which may vary depending on how to use the app.
-# The first option is to publish app in domino project and the second option is to publish the app in the workspace.
-# Learn more about Dash on Domino https://blog.dominodatalab.com/building-domino-web-app-dash/   
-
-portID = '8882'
 ## To publish the app using domino app feature. This feature expects portID: '8888'
-#app.config.update({                      
-#'routes_pathname_prefix': runurl,        
-#'requests_pathname_prefix': runurl       
-#})                                       
-
-## To publish the app using workspace. This feature expects portID other than '8888' such as: '8881' or '8885'
-app.config.routes_pathname_prefix=''+portID+'/'                                                 
-app.config.requests_pathname_prefix=''+portID+'/'                                               
-#################################################################
+app.config.update({                      
+'routes_pathname_prefix': runurl,        
+'requests_pathname_prefix': runurl       
+})                                       
 
 # Set layout
 app.layout = html.Div(style={'paddingLeft': '40px', 'paddingRight': '40px'}, children=[
@@ -83,4 +71,4 @@ def update_figure(selected_year):
 
 
 if __name__ == '__main__':
-    app.run_server(port=int(portID), host='0.0.0.0', debug=True)
+    app.run_server(port=8888, host='0.0.0.0', debug=True)
