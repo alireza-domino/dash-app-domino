@@ -32,3 +32,8 @@ USER ubuntu
 ```
 
 - Without docker instruction examples are in the no-docker-instruction-dash-app
+
+
+
+How to access the file:
+https://{domino-url}/{domino-username}/{domino-project-name}/notebookSession/{run-id}/proxy/{port}/
