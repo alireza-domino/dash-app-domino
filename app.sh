@@ -1,1 +1,1 @@
-python dash-app-4x-5x-doc-inst.py
+python dash-app-doc-inst.py
