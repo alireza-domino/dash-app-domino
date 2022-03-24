@@ -13,10 +13,6 @@ import os
 
 
 
-
-
-
-
 portID = '8888'
 
 
@@ -78,4 +74,4 @@ app.layout = dash_table.DataTable(df.to_dict('records'), [{"name": i, "id": i} f
  
  
 if __name__ == '__main__':
-    app.run_server(port=int(portID), host='0.0.0.0', debug=True) # Domino hosts all apps at 0.0.0.0:8888
+    app.run_server(port=int(portID), host='0.0.0.0') # Domino hosts all apps at 0.0.0.0:8888
