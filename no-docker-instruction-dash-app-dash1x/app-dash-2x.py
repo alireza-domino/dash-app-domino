@@ -6,8 +6,7 @@
 #index()
 
 import dash
-from dash import Dash
-import dash_table
+from dash import Dash, dash_table
 import pandas as pd
 import os
 
