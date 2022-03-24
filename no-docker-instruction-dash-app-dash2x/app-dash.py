@@ -1,9 +1,9 @@
-import subprocess
+#import subprocess
  
-def index():
-    subprocess.call("sudo pip install -r requirements_apps.txt", shell=True)
+#def index():
+#    subprocess.call("sudo pip install -r requirements_apps.txt", shell=True)
  
-index()
+#index()
  
 import dash
 from dash.dependencies import Input, Output, State
