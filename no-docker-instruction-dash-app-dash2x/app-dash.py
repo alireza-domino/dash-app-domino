@@ -4,7 +4,8 @@
 #    subprocess.call("sudo pip install -r requirements_apps.txt", shell=True)
  
 #index()
- 
+
+import dash
 from dash import Dash, dash_table
 import pandas as pd
 import os
