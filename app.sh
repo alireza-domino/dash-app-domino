@@ -1,1 +1,1 @@
-python ./no-docker-instruction-dash-app-dash2x/app-dash.py
+python ./no-docker-instruction-dash-app-dash2x/app-dash-1x.py
