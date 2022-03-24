@@ -13,7 +13,25 @@ import os
 
 
 
+
+
+
+
 portID = '8888'
+
+
+external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+
+app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+
+app.config.update({'requests_pathname_prefix': '/{}/{}/r/notebookSession/{}/'.format(
+  os.environ.get("DOMINO_PROJECT_OWNER"),
+  os.environ.get("DOMINO_PROJECT_NAME"),
+  os.environ.get("DOMINO_RUN_ID"))})
+
+
+
+"""
 runID = os.environ['DOMINO_RUN_ID']
 user = os.environ['DOMINO_PROJECT_OWNER']
 project = os.environ['DOMINO_PROJECT_NAME']
@@ -48,7 +66,14 @@ app.scripts.config.serve_locally = True
 app.config.routes_pathname_prefix=''+portID+'/'
 app.config.requests_pathname_prefix=''+portID+'/'
 #################################################################
- 
+
+"""
+
+
+
+
+
+
 
     
     
