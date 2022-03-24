@@ -71,10 +71,6 @@ app.config.requests_pathname_prefix=''+portID+'/'
 
 
 
-
-
-
-
     
     
 df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/solar.csv')
